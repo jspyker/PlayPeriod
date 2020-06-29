@@ -22,11 +22,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+
     /**
      * Displays an Android spinner widget backed by data in an array. The
      * array is loaded from the strings.xml resources file.
      */
-    public class MainActivity extends Activity {
+    public class MainActivity extends AppCompatActivity {
 
         private static final int MENU_RESET = 1;
 
@@ -167,6 +170,8 @@ import android.widget.Toast;
             super.onCreate(savedInstanceState);
 
             setContentView(R.layout.main);
+            Toolbar toolbar = findViewById(R.id.toolbar);
+            setSupportActionBar(toolbar);
 
             editText = new EditText[3];
             editText[0] = (EditText) findViewById(R.id.edittext1);

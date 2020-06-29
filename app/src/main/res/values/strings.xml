@@ -27,6 +27,10 @@
     <string name="menu_stop">Stop</string>    
     <string name="menu_harder">Harder</string>    
     <string name="menu_easier">Easier</string>  
-    <string name="menu_solve">Solve</string>  
-    
+    <string name="menu_solve">Solve</string>
+    <string name="double_down">&lt;&lt;</string>
+    <string name="down">&lt;</string>
+    <string name="double_up">>></string>
+    <string name="up">></string>
+
 </resources>

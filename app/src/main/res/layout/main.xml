@@ -1,163 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
 
-
-    <EditText
-        android:id="@+id/edittext1"
-        android:layout_width="142dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button1down"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:focusable="false"
-        android:inputType="none|number"
-        android:singleLine="true" />
-
-    <Button
-        android:id="@+id/button1up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/edittext1"
-        android:layout_alignBottom="@+id/edittext1"
-        android:layout_centerHorizontal="true"
-        android:layout_toRightOf="@id/edittext1"
-        android:text="  >  " />
-
-    <Button
-        android:id="@+id/button1down"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/edittext1"
-        android:text="  &lt;  " />
-
-
-    <Button
-        android:id="@+id/button1downdown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@id/button1down"
-        android:text=" &lt;&lt; " />
-
-    <Button
-        android:id="@+id/button1upup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/button1up"
-        android:text=" >> " />
-
-
-    <EditText
-        android:id="@+id/edittext2"
-        android:layout_width="142dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edittext1"
-        android:layout_toLeftOf="@+id/button1up"
-        android:ems="10"
-        android:focusable="false"
-        android:inputType="none|number"
-        android:singleLine="true" />
-
-
-    <EditText
-        android:id="@+id/edittext3"
-        android:layout_width="142dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edittext2"
-        android:layout_toRightOf="@+id/button1down"
-        android:ems="10"
-        android:focusable="false"
-        android:inputType="none|number"
-        android:singleLine="true" />
-
-
-    <Button
-        android:id="@+id/button2down"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/edittext2"
-        android:layout_alignBottom="@+id/edittext2"
-        android:layout_toLeftOf="@+id/edittext2"
-        android:text="  &lt;  " />
-
-
-    <Button
-        android:id="@+id/button2downdown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button1down"
-        android:layout_toLeftOf="@+id/button1down"
-        android:text=" &lt;&lt; " />
-
-
-    <Button
-        android:id="@+id/button2up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/edittext2"
-        android:layout_alignBottom="@+id/edittext2"
-        android:layout_toRightOf="@+id/edittext2"
-        android:text="  >  " />
-
-
-
-    <Button
-        android:id="@+id/button3up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edittext2"
-        android:layout_toRightOf="@id/edittext3"
-        android:text="  >  " />
-
-
-    <Button
-        android:id="@+id/button2upup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button2up"
-        android:layout_alignBottom="@+id/button2up"
-        android:layout_toRightOf="@+id/button2up"
-        android:text=" >> " />
-
-
-    <Button
-        android:id="@+id/button3upup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/edittext3"
-        android:layout_alignBottom="@+id/edittext3"
-        android:layout_toRightOf="@+id/button3up"
-        android:text=" >> " />
-
-
-    <Button
-        android:id="@+id/button3down"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/edittext3"
-        android:layout_alignBottom="@+id/edittext3"
-        android:layout_toLeftOf="@+id/edittext3"
-        android:text="  &lt;  " />
-
-
-    <Button
-        android:id="@+id/button3downdown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button2downdown"
-        android:layout_toLeftOf="@+id/button2down"
-        android:text=" &lt;&lt; " />
-
-
-
-    <com.rexcola.playperiod.PlayPeriodView
-        android:id="@+id/surfaceView1"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/button3upup" />
+        android:layout_height="match_parent">
 
-</RelativeLayout>
+
+        <Button
+            android:id="@+id/button1up"
+            android:layout_width="31dp"
+            android:layout_height="44dp"
+            android:text="@string/up"
+            app:layout_constraintStart_toEndOf="@+id/edittext1"
+            app:layout_constraintTop_toTopOf="@+id/edittext1" />
+
+        <Button
+            android:id="@+id/button1down"
+            android:layout_width="31dp"
+            android:layout_height="44dp"
+            android:text="@string/down"
+            app:layout_constraintRight_toLeftOf="@+id/edittext1"
+            app:layout_constraintTop_toTopOf="@+id/edittext1" />
+
+        <Button
+            android:id="@+id/button1downdown"
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:text="@string/double_down"
+            app:layout_constraintEnd_toStartOf="@+id/button1down"
+            app:layout_constraintTop_toTopOf="@+id/edittext1" />
+
+        <Button
+            android:id="@+id/button1upup"
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:text="@string/double_up"
+            app:layout_constraintLeft_toRightOf="@+id/button1up"
+            app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+        <Button
+            android:id="@+id/button2down"
+            android:layout_width="31dp"
+            android:layout_height="44dp"
+            android:text="@string/down"
+            app:layout_constraintEnd_toStartOf="@+id/edittext2"
+            app:layout_constraintTop_toTopOf="@+id/edittext2" />
+
+
+        <Button
+            android:id="@+id/button2downdown"
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:text="@string/double_down"
+            app:layout_constraintEnd_toStartOf="@+id/button2down"
+            app:layout_constraintTop_toTopOf="@+id/edittext2" />
+
+
+        <Button
+            android:id="@+id/button2up"
+            android:layout_width="31dp"
+            android:layout_height="44dp"
+            android:text="@string/up"
+            app:layout_constraintStart_toEndOf="@+id/edittext2"
+            app:layout_constraintTop_toTopOf="@+id/edittext2" />
+
+        <Button
+            android:id="@+id/button3up"
+            android:layout_width="31dp"
+            android:layout_height="44dp"
+            android:text="@string/up"
+            app:layout_constraintLeft_toRightOf="@id/edittext3"
+            app:layout_constraintTop_toTopOf="@+id/edittext3" />
+
+
+        <Button
+            android:id="@+id/button2upup"
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:text="@string/double_up"
+            app:layout_constraintLeft_toRightOf="@+id/button2up"
+            app:layout_constraintTop_toTopOf="@+id/edittext2" />
+
+        <Button
+            android:id="@+id/button3upup"
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:text="@string/double_up"
+            app:layout_constraintStart_toEndOf="@+id/button3up"
+            app:layout_constraintTop_toTopOf="@+id/edittext3" />
+
+        <Button
+            android:id="@+id/button3down"
+            android:layout_width="31dp"
+            android:layout_height="44dp"
+            android:text="@string/down"
+            app:layout_constraintRight_toLeftOf="@+id/edittext3"
+            app:layout_constraintTop_toTopOf="@+id/edittext3" />
+
+
+        <Button
+            android:id="@+id/button3downdown"
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:text="@string/double_down"
+            app:layout_constraintEnd_toStartOf="@+id/button3down"
+            app:layout_constraintTop_toTopOf="@+id/edittext3" />
+
+
+        <EditText
+            android:id="@+id/edittext1"
+            android:layout_width="50dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="none|number"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+        <EditText
+            android:id="@+id/edittext2"
+            android:layout_width="50dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="none|number"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext1" />
+
+
+        <EditText
+            android:id="@+id/edittext3"
+            android:layout_width="50dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="none|number"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext2" />
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.rexcola.playperiod.PlayPeriodView
+            android:id="@+id/surfaceView1"
+            android:layout_width="match_parent"
+            android:layout_height="485dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext3" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
